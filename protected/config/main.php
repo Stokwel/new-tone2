@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath' => dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name' => 'Shop',
+	'name' => 'new-tone',
 	'language' => 'ru',
 
 	// preloading 'log' component
@@ -17,6 +17,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'application.'
 	),
 
 	'defaultController' => 'default',
@@ -26,7 +27,11 @@ return array(
             'class' => 'system.gii.GiiModule',
             'password' => '12345',
         ),
-		'admin',
+		'admin' => array(
+            'modules' => array(
+                'pages'
+            )
+        ),
     ),
     
 	// application components
@@ -65,13 +70,18 @@ return array(
             'allowAutoLogin' => true,
 		),
 		'db' => array(
-			'connectionString' => 'mysql:host=localhost;dbname=shop',
+			'connectionString' => 'mysql:host=localhost;dbname=new_tone',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'ghbdtn',
+			'password' => 'gw4t3sns',
 			'charset' => 'utf8',
 			'tablePrefix' => '',
 		),
+
+        'authManager'=>array(
+            'class'=>'CDbAuthManager',
+            'connectionID'=>'db',
+        ),
 
 		'errorHandler' => array(
 			'errorAction' => 'default/error',
@@ -87,8 +97,9 @@ return array(
 
 				'/contact' => 'default/contact',
 
-				'/login' => 'default/login',
-				'/logout' => 'default/logout',
+				'/login' => 'user/login',
+                '/registration' => 'user/registration',
+				'/logout' => 'user/logout',
 
 				'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 			),

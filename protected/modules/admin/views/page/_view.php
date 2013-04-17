@@ -2,7 +2,7 @@
 /* @var $this PageController */
 /* @var $data Page */
 ?>
-
+sdddgdfg
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
