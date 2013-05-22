@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf493657-913f-4a67-90bc-64b8dbfa35bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/PageController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/TyresController.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" afterPath="$PROJECT_DIR$/protected/modules/admin/AdminModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/modules/pages/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/modules/pages/controllers/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/modules/pages/PagesModule.php" afterPath="$PROJECT_DIR$/protected/modules/admin/modules/pages/PagesModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/modules/pages/views/default/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/modules/pages/views/default/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cf493657-913f-4a67-90bc-64b8dbfa35bf" name="Default" comment="" />
     <ignored path="new-tone.git.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="cf493657-913f-4a67-90bc-64b8dbfa35bf" time="1369254479126" ignored="false" />
