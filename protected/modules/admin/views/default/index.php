@@ -1,7 +1,5 @@
-<ul>
-	<?php foreach($links as $name => $link){ ?>
-		<li>
-			<a href='<?= $link; ?>'><?=$name;?></a>
-		</li>
-	<?php } ?>
-</ul>
+<?php
+$this->menu = $this->getModule()->generateMenu();
+$this->pageHeader = '<span class="icon-screen"></span>Админка';
+$publicAdmin = $this->getModule()->resourcesBaseUrl;
+?>

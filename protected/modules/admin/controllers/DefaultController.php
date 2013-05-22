@@ -7,20 +7,11 @@
  */ 
 class DefaultController extends Controller
 {
+    public $layout = 'admin.views.layouts.admin';
+
     public function actionIndex()
     {
-        $controllers = CFileHelper::findFiles(dirname(__FILE__));
-        $links = array();
-        foreach ($controllers as $filename) {
-            if (strpos($filename, 'Default') !== false) {
-				continue;
-			}
-
-            $filename = basename($filename);
-            $controller = str_replace('Controller.php', '', $filename);
-            $links[$controller] = $this->createUrl('/admin/'. strtolower($controller));
-        }
-        $this->render('index', array('links' => $links));
+        $this->render('index', array('links' => $this->getModule()->generateMenu()));
     }
 
     public function filters()

@@ -14,4 +14,9 @@ class PagesModule extends CWebModule
             'admin.modules.pages.views.*',
 		));
 	}
+
+    public function generateMenu()
+    {
+        return $this->getParentModule()->generateMenu();
+    }
 }

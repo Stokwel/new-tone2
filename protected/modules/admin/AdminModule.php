@@ -25,10 +25,13 @@ class AdminModule extends CWebModule
 
     public function generateMenu()
     {
-        return array(
-			array('label'=>'Страницы', 'url'=>array('/admin/page')),
-			array('label'=>'Диски', 'url'=>array('/admin/wheel')),
-			array('label'=>'Шины', 'url'=>array('/admin/tyres')),
-		);
+        $modules = CFileHelper::findFiles(__DIR__.'/modules', ['fileTypes' => ['json']]);
+        $links = array();
+        foreach ($modules as $item) {
+            $params = CJSON::decode(file_get_contents($item));
+            $links[] = ['label' => $params['title'], 'url' => Yii::app()->createUrl('/admin/'.$params['name'])];
+        }
+
+        return $links;
     }
 }

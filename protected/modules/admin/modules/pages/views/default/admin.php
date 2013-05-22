@@ -7,7 +7,7 @@
         'Управление',
     );
 
-    $this->menu = $this->getModule()->parentModule->generateMenu();
+    $this->menu = $this->getModule()->generateMenu();
     $this->pageHeader = '<span class="icon-screen"></span>Управление страницами';
 	$publicAdmin = $this->getModule()->resourcesBaseUrl;
 ?>
