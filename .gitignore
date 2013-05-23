@@ -1,4 +1,39 @@
-assets/
-protected/runtime/
-themes/classic/views/
-.idea/
+# Ignore all DOT- TILDA-files
+.*
+~*
+*~
+
+# except .gitignore & .holder used to track empty folders
+!.gitignore
+!.holder
+
+# *.orig-files used to hold original config files
+!*.orig
+
+# Ignore folders which contains temp data or data which may be changed over the web
+public/assets/*
+protected/runtime/*
+protected/config/*
+protected/tests/report/*
+protected/tests/fixtures/*
+
+# except the holders in it
+!public/assets/.holder
+!protected/runtime/.holder
+!protected/tests/report/.holder
+!protected/tests/fixtures/.holder
+!.holder
+# Ignore IDE files
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+# IDEA
+./idea
+
+# SubLime text editor
+*.sublime-workspace
